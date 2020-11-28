@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+		<title>ガラス清掃のGriffin</title>
+		<link rel="stylesheet" href="../reset.css">
+		<link rel="stylesheet" href="../index.css">
+		<link rel="stylesheet" href="contact.css">
+		<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+	</head>
+	
+	<body>	
+<!--ヘッダー-->
+		<header class="header">
+			<div class="header-img__link">
+				<a href="../index.html">
+					<img src="../img/griffin-banner.png" alt="株式会社ケーワングリフィン">
+				</a>
+			</div>
+			<div class="header-side__position">
+				<div class="header-estimate">
+					<a class="header-estimate__decoration" href="../quote/quote.html">
+						<img src="../img/quote-icon.png" alt="お見積り">
+						お見積り
+					</a>
+				</div>
+				<div class="header-contact">
+					<p class="header-contact__time">受付時間：9:00~18:00</p>
+					<p class="header-contact__tel">TEL：<a href="tel:090-9841-5456">090-9841-5456</a></p>
+				</div>
+			</div>
+		</header>
+		
+<!--ナビゲーションメニュー-->		
+		<nav class="nav-menu">	
+				<ul class="nav-menu__list">
+					<li>
+						<a href="../service/service.html">サービス内容</a>
+					</li>
+					<li>
+						<a href="../recruit/recruit.html">採用情報</a>
+					</li>
+					<li>
+						<a href="../FAQ/FAQ.html">よくある質問</a>
+					</li>
+					<li>
+						<a href="contact.html">お問い合わせ</a>
+					</li>
+				</ul>	
+		</nav>
+
+<!--問い合わせイメージ-->	
+		<div class="contact-image">
+			<img src="../img/contact-image.png" alt="お問い合わせ">
+			<h1 class="contact-image__title">お問い合わせ</h1>
+		</div>
+	
+<!--進行状況（ステップ）-->
+		<section class="contact-stage">
+			
+			<img class="mobile-image" src="../img/arrow-down.png" alt="矢印">
+			<img class="pc-image" src="../img/arrows.jpg" alt="矢印">
+			
+			<div class="contact-stage__list contact-stage__now">
+				<p>問い合わせ内容の入力</p>
+			</div>
+			
+			<img class="mobile-image" src="../img/arrow-down__gray.png" alt="矢印">
+			<img class="pc-image" src="../img/arrows-glay.png" alt="矢印">
+			
+			<div class="contact-stage__list">
+				<p class="">入力内容の確認</p>
+			</div>
+			
+			<img class="mobile-image" src="../img/arrow-down__gray.png" alt="矢印">
+			<img class="pc-image" src="../img/arrows-glay.png" alt="矢印">
+			<div class="contact-stage__list">
+				<p class="font-potition">送信完了</p>
+			</div>
+			
+		</section>
+		
+<!--入力案内-->	
+		<section class="contact">
+			
+			<h2 class="contact-title">お問い合わせ内容の入力</h2>
+			<hr>
+			<p>ガラス清掃全般に関するご相談、ご質問等は以下のフォームにてご記入お願い致します。<br>
+			凡そ３日以内に内容を確認し、折り返しご連絡させていただきます。
+			</p>
+
+<!--フォーム-->
+			<h2 class="contact-form__title">入力フォーム</h2>
+
+			<form action="confirm/contact-confirm.php" method="post" name="form">	
+				<table class="contact-form">
+
+					<tr class="contact-form__row">
+						<th class="contact-form__head">
+							氏名（会社名）
+							<img class="icon-size" src="../img/req-icon.png" alt="必須">
+						</th>
+						<td class="contact-form__data">
+							<input class="contact-form__default" type="text" name="Name" placeholder="山田　太郎（フルネーム）" required maxlength="35" pattern=".*\S+.*" title="正式な氏名・会社名を入力してください"/>
+						</td>
+					</tr>
+
+					<tr class="contact-form__row">
+						<th class="contact-form__head">
+							メールアドレス
+							<img class="icon-size" src="../img/req-icon.png" alt="必須">
+						</th>
+						<td class="contact-form__data">
+							<input class="contact-form__default" type="email" name="SenderAddress" placeholder="tarou@exsample.jp" required maxlength="50" pattern=".*\S+.*" title="正式なアドレスを入力してください"/>
+						</td>
+					</tr>
+
+					<tr class="contact-form__row">
+						<th class="contact-form__head">
+							電話番号
+							<img class="icon-size" src="../img/req-icon.png" alt="必須">
+						</th>
+						<td class="contact-form__data">
+							<input class="contact-form__default" type="tel" name="Tel" placeholder="09012345678(ハイフンなし)" required maxlength="11" pattern=".*\S+.*" title="正式な電話番号を入力してください"/>
+						</td>
+					</tr>
+					
+					<tr class="contact-form__row">
+						<th class="contact-form__head">
+							ご希望の連絡方法
+							<img class="icon-size" src="../img/req-icon.png" alt="必須">
+						</th>
+						<td class="contact-form__data">
+							<label class="focus">
+								<input class="contact-form__way" type="radio" name="WaysToContact" value="電話" checked="checked">電話
+							</label>
+							<label class="focus">
+								<input class="contact-form__way" type="radio" name="WaysToContact" value="メール">メール
+							</label>
+						</td>
+					</tr>
+
+					<tr class="contact-form__row">
+						<th class="contact-form__head">
+							お問い合わせ内容
+							<img class="icon-size" src="../img/req-icon.png" alt="必須">
+						</th>
+						<td class="contact-form__data">
+							<textarea class="contact-form__textarea" name="Message" placeholder="お問い合わせ内容をご記入ください" required maxlength="500"　pattern=".*\S+.*" title="内容を入力してください"></textarea>
+						</td>
+					</tr>
+				</table>
+
+				<div class="contact-form__reset">
+					<input type="reset" value="リセット"/>
+				</div>
+				<div class="contact-form__submit">
+					<input type="submit" value="内容のご確認"/>
+				</div>
+
+			</form>
+		</section>
+		
+		<footer class="footer">
+			<ul class="footer-category">
+				<li class="footer-category__item footer-category__bar"><a class="" href="../index.html">トップページ</a></li>
+				<li class="footer-category__item footer-category__bar"><a href="../company/company.html">会社情報</a></li>
+				<li class="footer-category__item footer-category__bar"><a href="../recruit/recruit.html">採用情報</a></li>
+				<li class="footer-category__item"><a href="contact.html">お問い合わせ</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
